@@ -12,10 +12,10 @@ export default function Footer() {
         <div className='col-lg-4 col-12 mb-lg-0 mb-4 middle'>
           <p className='col-title'>Enlaces</p>
           <div>
-            <a href="#">Privacidad</a>
-            <a href="#">Términos y Condiciones</a>
-            <a href="#">Contacto</a>
-            <a href="#">Preguntas Frecuentes</a>
+            <a href="/">Privacidad</a>
+            <a href="/">Términos y Condiciones</a>
+            <a href="/">Contacto</a>
+            <a href="/">Preguntas Frecuentes</a>
           </div>
         </div>
         <div className='col-lg-4 col-12 mb-lg-0 mb-4 right'>

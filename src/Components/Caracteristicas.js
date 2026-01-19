@@ -1,6 +1,5 @@
 import React from 'react'
 import "./Caracteristicas.scss"
-import { div } from 'framer-motion/m'
 import Card from './Card'
 
 export default function Caracteristicas() {
