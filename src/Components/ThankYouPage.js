@@ -23,7 +23,7 @@ const ThankYouPage = () => {
             </svg>
           </div>
 
-          <h1 className="thankyou-title">¡Gracias por contactarnos!</h1>
+          <h1 className="thankyou-title">¡Gracias por inscribirte!</h1>
           
           <p className="thankyou-message">
             Hemos recibido tu información correctamente. 
