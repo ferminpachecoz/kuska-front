@@ -71,7 +71,7 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch(`http://localhost:4000/api/contacts`, {
+      const res = await fetch(`https://kuska-api-production.up.railway.app/api/contacts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
