@@ -1,0 +1,29 @@
+.tecnologia{
+  padding: 5em 3em;
+  .subtitle{
+    font-size: 24px;
+  }
+  .badge-aux{
+    display: flex;
+    justify-content: center;
+    .contenedor{
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      padding: 1em;
+      border-radius: 100px;
+      img{
+        width: 25px;
+        margin-right: 8px;
+      }
+      p{
+        font-weight: 600;
+        color: black;
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width: 475px){
+  .tecnologia{
+    padding: 5em 2em;
+  }
+}

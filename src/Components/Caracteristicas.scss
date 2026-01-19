@@ -1,0 +1,10 @@
+@import "../styles/variables";
+
+.caracteristicas{
+  padding: 5em 3em;
+  background-color: $crema;
+  .subtitle{
+    font-size: 24px;
+    margin-bottom: 2em;
+  }
+}

@@ -1,0 +1,79 @@
+@import '../styles/variables';
+
+.hero-banner {
+  min-height: 100vh;
+  display: flex;
+  padding: 0em 3em;
+  align-items: center;
+  background: linear-gradient(
+    105deg, 
+    $naranja 0%, 
+    $amarillo 55%, 
+    $verde 100%
+  );
+  overflow: hidden;
+  img{
+    width: 45%;
+  }
+  h1{
+    color: white;
+    font-family: $font-primary;
+    font-size: 4.5em;
+    font-weight: 900;
+  }
+  h2{
+    font-weight: 500;
+    font-size: 1.5em;
+    color: white;
+    font-family: $font-primary;
+    margin-bottom: 1em;
+  }
+  .btn-download{
+    padding: 10px 25px;
+    background-color: white;
+    border-radius: 10px;
+    color: $lila;
+    font-weight: 600;
+    margin-right: 1.5em;
+    font-size: 18px;
+  }
+  .btn-how-to{
+    background-color: $lila;
+    border-radius: 10px;
+    padding: 10px 25px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+@media (max-width: 475px){
+  .hero-banner{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0em 2em 2em 2em;
+    h1{
+      text-align: center;
+      font-size: 3.5em;
+      margin-bottom: 0.6em;
+    }
+    h2{
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+    .btn-download{
+      margin-right: 0px;
+      margin-bottom: 1em;
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0px;
+    }
+    .btn-how-to{
+      font-size: 24px;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0px;
+    }
+  }
+}

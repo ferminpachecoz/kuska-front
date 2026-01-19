@@ -1,0 +1,74 @@
+// src/styles/index.scss
+@import './styles/variables';
+
+body {
+  font-family: $font-secondary; // General Sans para todo el texto base
+  font-weight: $weight-regular;
+  -webkit-font-smoothing: antialiased;
+  color: $color-text-dark;
+}
+
+// Jerarquía Tipográfica (Según Pág. 24 del Manual)
+p{
+  margin-bottom: 0px;
+}
+a {
+  text-decoration: none; // Quita el subrayado
+  color: inherit;        // Hereda el color del texto padre (evita el azul/violeta por defecto)
+  cursor: pointer;       // Asegura que el cursor sea una "manito"
+  
+  // Opcional: Quitar el outline azul al hacer foco (accesibilidad)
+  // Ojo: Si quitas esto, asegúrate de definir un estilo visual propio para :focus
+  &:focus {
+    outline: none;
+  }
+
+  // Asegura que los estados hover/active/visited no traigan estilos indeseados
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+h1, h2, h3 {
+  font-family: $font-primary; // Parkinsans para títulos
+}
+
+h1 {
+  font-weight: $weight-bold; // Título grande
+  // Ajusta el tamaño según tu diseño, ej:
+  font-size: 3rem; 
+}
+
+h2 {
+  font-weight: $weight-medium; // Subtítulos
+  font-size: 2rem;
+}
+
+h3, h4, h5 {
+  font-weight: $weight-medium; // Títulos pequeños
+}
+
+// Clase de utilidad si necesitas aplicar la fuente manualmente
+.font-title {
+  font-family: $font-primary;
+}
+
+.font-body {
+  font-family: $font-secondary;
+}
+.section-title{
+  font-size: 48px;
+  font-family: $font-primary;
+  font-weight: 900;
+  color: black;
+}
+p{
+  color: rgb(109, 109, 109);
+}
+@media (max-width: 475px){
+  .section-title{
+    font-size: 35px;
+  }
+}
