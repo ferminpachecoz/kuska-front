@@ -5,19 +5,19 @@ import "./Valores.scss"
 export default function Valores() {
   const array=[
     {
-      icon: "/iconos/security.png",
+      icon: "/elementos-graficos/ZIGZAG.png",
       title: "Autenticidad",
       description: "Perfiles reales y moderados",
       color: "linear-gradient(to right, #F49F67, #ED484A)"
     },
     {
-      icon: "/iconos/group.png",
+      icon: "/elementos-graficos/ROMBO.png",
       title: "Comunidad",
       description: "Espacios para compartir música, costumbres y experiencias",
       color: "linear-gradient(to right, #FED264, #45A55A)"
     },
     {
-      icon: "/iconos/heart.png",
+      icon: "/elementos-graficos/LINEAS.png",
       title: "Propósito",
       description: "Reforzar los lazos culturales en el mundo digital",
       color: "linear-gradient(to right, #9E81BA, #F49F67)"

@@ -1,6 +1,7 @@
 .phrase{
   display: flex;
   justify-content: center;
+  position: relative;
   .contenedor{
     width: 60%;
     padding: 5em 0em;
@@ -9,11 +10,35 @@
       padding: 0em 1em;
     }
   }
+  .decoration-1{
+    width: 100px;
+    position: absolute;
+    left: 12%;
+    top: 30%;
+    opacity: 0.3;
+  }
+  .decoration-2{
+    width: 100px;
+    position: absolute;
+    right: 12%;
+    bottom: 20%;
+    opacity: 0.3;
+  }
 }
 @media (max-width: 475px){
   .phrase{
     .contenedor{
       width: 90%;
+    }
+    .decoration-1{
+      width: 150px;
+      opacity: 0.2;
+      top: 2%;
+    }
+    .decoration-2{
+      width: 150px;
+      bottom: 2%;
+      opacity: 0.2;
     }
   }
 }

@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   .contenedor{
     width: 70%;
     h1{
@@ -46,6 +47,20 @@
       font-size: 18px;
     }
   }
+  .decoration-1{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    width: 150px;
+    opacity: 0.5;
+  }
+  .decoration-2{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 150px;
+    opacity: 0.5;
+  }
 }
 @media (max-width: 475px){
   .secondary-banner{
@@ -61,6 +76,18 @@
     }
     .fichas-aux{
       text-align: center;
+    }
+    .decoration-1{
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 2%;
+      opacity: 0.3;
+    }
+    .decoration-2{
+      right: 50%;
+      transform: translateX(50%);
+      top: 5%;
+      opacity: 0.8;
     }
   }
 }

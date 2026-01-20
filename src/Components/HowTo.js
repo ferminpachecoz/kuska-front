@@ -27,6 +27,8 @@ export default function HowTo() {
   ]
   return (
     <div className='how-to' id='como-funciona'>
+      <img src="/elementos-graficos/RECURSOS KUSKA -36.png" className='decoration-1' alt="Elementos grafico Kuska 1" />
+      <img src="/elementos-graficos/RECURSOS KUSKA -42.png" className='decoration-2' alt="Elementos grafico Kuska 2" />
       <h1 className='text-center section-title'>Cómo funciona</h1>
       <p className='subtitle text-center mb-5'>Tres pasos simples para encontrar tu conexión</p>
       <div className='row row-cols-1 row-cols-lg-3 g-4'>

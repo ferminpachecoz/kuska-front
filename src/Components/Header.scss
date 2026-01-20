@@ -3,8 +3,11 @@
 .header{
   padding: 1em 3em;
   background-color: $crema;
+  position: fixed;
+  width: 100%;
+  z-index: 1000000000000;
   img{
-    width: 150px;
+    width: 200px;
     height: auto;
   }
   a{

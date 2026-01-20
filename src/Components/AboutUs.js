@@ -5,7 +5,7 @@ export default function AboutUs() {
   return (
     <div className='about-us d-flex flex-column flex-lg-row'>
       <div className='col-12 col-lg-5 order-2 order-lg-1 d-flex justify-content-center d-lg-block'>
-        <img src="/elementos-graficos/mockup-tablet.png" alt="Mockup Tablet" />
+        <img src="/elementos-graficos/UNION (3).png" alt="Mockup Tablet" />
       </div>
       <div className='col-lg-7 col-12 contenido order-1 order-lg-2'>
         <h1 className='section-title mb-4'>Qué es Kuska</h1>

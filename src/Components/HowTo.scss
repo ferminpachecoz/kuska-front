@@ -2,6 +2,7 @@
 
 .how-to{
   padding: 5em 3em;
+  position: relative;
   .subtitle{
     font-size: 24px;
   }
@@ -49,9 +50,31 @@
     font-weight: 600;
     margin-top: 1.5em;
   }
+  .decoration-1{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 100px;
+  }
+  .decoration-2{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 100px;
+  }
 }
 @media (max-width: 475px){
   .how-to{
     padding: 5em 2em;
+    .decoration-1{
+      left: 3%;
+      top: 15%;
+      opacity: 0.6;
+    }
+    .decoration-2{
+      right: 3%;
+      top: 15%;
+      opacity: 0.6;
+    }
   }
 }

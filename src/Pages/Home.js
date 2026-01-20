@@ -32,12 +32,12 @@ export default function Home() {
         </span>
       </SecondaryBanner>
       <HowTo />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Tecnologia />
       <SecondaryBanner
         title={"Unite. Compartí. Conectá."}
         subtitle={"Tu comunidad te está esperando"}
-        color={"linear-gradient(105deg, #F49F67 0%, #FED264 55%, #45A55A 100%)"}
+        color={"linear-gradient(105deg, #9E81BA 0%, #ED484A 55%, #9E81BA 100%)"}
       >
         <div className='d-flex justify-content-center mb-5'>
           <a href="/contacto">Pre inscripción</a>
