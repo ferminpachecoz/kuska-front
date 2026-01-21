@@ -63,7 +63,7 @@ const PrivacyPolicy = () => {
 
   return (
     <main className="pp">
-      <div className="pp__container">
+      <div className="pp__container" id="top">
         <header className="pp__hero">
           <div className="pp__badge">Kuska</div>
           <h1 className="pp__h1">Política de Privacidad</h1>

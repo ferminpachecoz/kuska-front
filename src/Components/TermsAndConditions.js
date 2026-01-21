@@ -5,7 +5,7 @@ const TermsAndConditions = () => {
   const lastUpdated = "9 de octubre de 2025";
 
   return (
-    <main className="tc">
+    <main className="tc" id="top">
       <div className="tc__container">
         <header className="tc__hero">
           <div className="tc__brandPill">Kuska</div>
@@ -23,7 +23,7 @@ const TermsAndConditions = () => {
             </span>
             <span className="tc__dot" aria-hidden="true">•</span>
             <span className="tc__metaItem">
-              <strong>Titular del servicio:</strong> 4 MINDS S.A. — CUIT [●]
+              <strong>Titular del servicio:</strong> 4 MINDS S.A. — CUIT [30719227690]
             </span>
             <span className="tc__dot" aria-hidden="true">•</span>
             <span className="tc__metaItem">

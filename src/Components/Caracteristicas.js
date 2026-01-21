@@ -31,6 +31,8 @@ export default function Caracteristicas() {
   ]
   return (
     <div className='caracteristicas' id='caracteristicas'>
+      <img className='decoration-1' src="/elementos-graficos/ZIGZAG.png" alt="Recursos kuska cahi" />
+      <img className='decoration-2' src="/elementos-graficos/ESLABON.png" alt="Recursos kuska eslabón" />
       <h1 className='text-center section-title'>Características que importan</h1>
       <p className='text-center subtitle'>Diseñadas para que encuentres conexiones auténticas</p>
       <div className='row row-cols-1 row-cols-lg-2 g-5'>

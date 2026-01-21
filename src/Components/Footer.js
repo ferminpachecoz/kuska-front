@@ -22,15 +22,19 @@ export default function Footer() {
           <p className='col-title'>Seguinos</p>
           <div className='social-media'>
             <span>
-              <a href="https://www.instagram.com/kuskaoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <a href="https://www.instagram.com/kuskaoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="  target='_blank' rel="noreferrer">
                 <img src="/iconos/instagram.png" alt="Logo Instagram" />
               </a>
             </span>
             <span>
-              <img src="/iconos/facebook.png" alt="Logo Facebook" />
+              <a href="https://www.facebook.com/profile.php?id=61582461046207&sk=directory_contact_info" target='_blank' rel="noreferrer">
+                <img src="/iconos/facebook.png" alt="Logo Facebook" />
+              </a>
             </span>
             <span>
-              <img src="/iconos/gmail.png" alt="Logo Gmail" />
+              <a href="https://www.tiktok.com/@kuska90?_r=1&_t=ZM-93FMQgk7dEa" rel="noreferrer" target='_blank'>
+                <img src="/iconos/tik-tok.png" alt="Logo Gmail" />
+              </a>
             </span>
           </div>
         </div>

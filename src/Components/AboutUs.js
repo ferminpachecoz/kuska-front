@@ -4,6 +4,11 @@ import "./AboutUs.scss"
 export default function AboutUs() {
   return (
     <div className='about-us d-flex flex-column flex-lg-row'>
+      <img 
+        src="/elementos-graficos/FLECHAS.png" 
+        alt="Decoracion de flechas" 
+        className='decoration-1'
+      />
       <div className='col-12 col-lg-5 order-2 order-lg-1 d-flex justify-content-center d-lg-block'>
         <img src="/elementos-graficos/UNION (3).png" alt="Mockup Tablet" />
       </div>

@@ -3,8 +3,35 @@
 .caracteristicas{
   padding: 5em 3em;
   background-color: $crema;
+  position: relative;
   .subtitle{
     font-size: 24px;
     margin-bottom: 2em;
+  }
+  .decoration-1{
+    width: 150px;
+    opacity: 0.8;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+  .decoration-2{
+    width: 150px;
+    opacity: 0.8;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+}
+@media (max-width: 475px){
+  .caracteristicas{
+    .decoration-1{
+      width: 80px;
+      top: 1%;
+    }
+    .decoration-2{
+      width: 80px;
+      top: 12%;
+    }
   }
 }

@@ -3,6 +3,7 @@
 .about-us{
   padding: 5em 8em;
   background-color: $crema;
+  position: relative;
   img{
     width: 90%;
     height: auto;
@@ -16,6 +17,13 @@
     .second{
       font-size: 18px;
     }
+  }
+  .decoration-1{
+    width: 150px;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+    opacity: 0.8;
   }
 }
 @media (max-width: 475px){

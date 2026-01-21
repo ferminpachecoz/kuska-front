@@ -25,6 +25,16 @@ export default function Valores() {
   ]
   return (
     <div className='valores' id='nuestros-valores'>
+      <img 
+        src="/elementos-graficos/UNION (1).png" 
+        alt="Recursos Kuska 40" 
+        className='decoration-1'
+      />
+      <img 
+        src="/elementos-graficos/RECURSOS KUSKA -61.png" 
+        alt="Recursos Kuska 40" 
+        className='decoration-2'
+      />
       <h1 className='section-title text-center'>Nuestros valores</h1>
       <p className='text-center subtitle mb-5'>Lo que nos hace diferentes</p>
       <div className='row row-cols-1 row-cols-lg-3 g-5'>

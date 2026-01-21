@@ -4,7 +4,7 @@ import "./Header.scss"
 export default function Header() {
   const [display, setDisplay] = useState(false)
   return (
-    <div className='header row row-cols-2 g-0'>
+    <div className='header row row-cols-2 g-0' >
       <div className='col-6 col-lg-6'>
         <a href="/">
           <img src="/logos/logo-grande.png" alt="Logo grande de Kuska" />

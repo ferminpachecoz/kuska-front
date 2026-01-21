@@ -32,6 +32,16 @@ export default function Tecnologia() {
   ]
   return (
     <div className='tecnologia'>
+      <img 
+        src="/elementos-graficos/RECURSOS KUSKA -40.png" 
+        alt="Recursos Kuska 40" 
+        className='decoration-1'
+      />
+      <img 
+        src="/elementos-graficos/RECURSOS KUSKA -61.png" 
+        alt="Recursos Kuska 40" 
+        className='decoration-2'
+      />
       <h1 className='text-center section-title mb-3'>Tecnología al servicio del encuentro</h1>
       <p className='text-center subtitle mb-5'>Tu seguridad y privacidad son nuestra prioridad</p>
       <div className='row row-cols-1 row-cols-lg-3 g-4'>

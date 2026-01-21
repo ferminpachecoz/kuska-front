@@ -1,6 +1,36 @@
 .valores{
   padding: 5em 3em;
+  position: relative;
   .subtitle{
     font-size: 24px;
+  }
+  .decoration-1{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    width: 150px;
+    opacity: 0.1;
+    z-index: 10;
+  }
+  .decoration-2{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 150px;
+    opacity: 0.1;
+  }
+}
+@media (max-width: 475px){
+  .valores{
+    .decoration-2{
+      left: 5%;
+      top: 15%;
+      width: 80px;
+    }
+    .decoration-1{
+      top: 2%;
+      right: 2%;
+      width: 80px;
+    }
   }
 }
