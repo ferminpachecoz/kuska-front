@@ -326,7 +326,7 @@ const TermsAndConditions = () => {
               <p className="tc__p">
                 4 MINDS S.A. actúa como Responsable de las Bases de Datos y tratará la información personal conforme a la Ley 25.326.
                 El Usuario tiene derecho de acceso, rectificación, actualización y supresión, pudiendo ejercerlos mediante solicitud a{" "}
-                <a className="tc__link" href="mailto:privacidad@kusca.app">privacidad@kusca.app</a>{" "}
+                <a className="tc__link" href="mailto:privacidad@kuska.app">privacidad@kuska.app</a>{" "}
                 y ante la AAIP. KUSKA informará la finalidad, el responsable y el domicilio de sus bases, y las registrará cuando corresponda.
               </p>
             </div>
@@ -506,8 +506,8 @@ const TermsAndConditions = () => {
             <li><strong>Idioma:</strong> la versión en español es la oficial y prevalente.</li>
             <li>
               <strong>Contacto:</strong> consultas legales{" "}
-              <a className="tc__link" href="mailto:legal@kusca.app">legal@kusca.app</a> — privacidad{" "}
-              <a className="tc__link" href="mailto:privacidad@kusca.app">privacidad@kusca.app</a> — soporte{" "}
+              <a className="tc__link" href="mailto:legal@kuska.app">legal@kuska.app</a> — privacidad{" "}
+              <a className="tc__link" href="mailto:privacidad@kuska.app">privacidad@kuska.app</a> — soporte{" "}
               <a className="tc__link" href="mailto:soporte@kuska.app">soporte@kuska.app</a>.
             </li>
           </ul>
@@ -529,7 +529,7 @@ const TermsAndConditions = () => {
             </li>
             <li>
               <strong>Privacidad y datos personales:</strong> KUSKA reconoce la tutela constitucional de la Acción de Protección de Privacidad (hábeas data) y principios de confidencialidad, seguridad y finalidad.
-              Solicitudes a <a className="tc__link" href="mailto:privacidad@kusca.app">privacidad@kusca.app</a>.
+              Solicitudes a <a className="tc__link" href="mailto:privacidad@kuska.app">privacidad@kuska.app</a>.
             </li>
             <li>
               <strong>Baja de suscripciones:</strong> mecanismo simple y visible para cancelar, con efecto al finalizar el período de facturación en curso.

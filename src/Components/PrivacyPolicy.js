@@ -80,7 +80,7 @@ const PrivacyPolicy = () => {
               •
             </span>
             <span className="pp__metaItem">
-              <strong>Responsable:</strong> 4 MINDS S.A. (“KUSCA”)
+              <strong>Responsable:</strong> 4 MINDS S.A. (“KUSKA”)
             </span>
           </div>
 
@@ -114,7 +114,7 @@ const PrivacyPolicy = () => {
         <section className="pp__card" aria-labelledby="intro">
           <SectionHeader id="intro" title="Introducción" />
           <p className="pp__p">
-            Titular y Responsable del Tratamiento: 4 MINDS S.A. (“KUSCA”, “nosotros”),
+            Titular y Responsable del Tratamiento: 4 MINDS S.A. (“KUSKA”, “nosotros”),
             CUIT [●], domicilio legal en [●], correo:{" "}
             <a className="pp__link" href="mailto:privacidad@kuska.app">
               privacidad@kuska.app
