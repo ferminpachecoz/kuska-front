@@ -217,8 +217,9 @@ const ContactPageAlt = () => {
               className="submit-btn"
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Enviando...' : 'Enviar mensaje'}
+              {isSubmitting ? 'Enviando...' : 'Enviar'}
             </button>
+            <a href="/terminos-y-condiciones" className='form-terms'> Ver términos y condiciones</a>
           </form>
         </div>
 

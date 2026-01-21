@@ -12,12 +12,17 @@ $font-title: 'Parkinsans', sans-serif;
 $font-body: 'General Sans', sans-serif;
 
 .contact-page {
+  padding-top: 80px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: $crema;
 }
-
+.form-terms{
+  color: #9E81BA !important;
+  display: block;
+  text-align: center;
+}
 .contact-main {
   flex: 1;
   display: flex;
