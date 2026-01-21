@@ -206,6 +206,7 @@ const ContactPageAlt = () => {
                   <option value="argentina">Argentina</option>
                   <option value="españa">España</option>
                   <option value="chile">Chile</option>
+                  <option value="brasil">Brasil</option>
                 </select>
                 {errors.pais && <span className="error-message">{errors.pais}</span>}
               </div>

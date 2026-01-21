@@ -24,7 +24,7 @@ export default function Valores() {
     },
   ]
   return (
-    <div className='valores'>
+    <div className='valores' id='nuestros-valores'>
       <h1 className='section-title text-center'>Nuestros valores</h1>
       <p className='text-center subtitle mb-5'>Lo que nos hace diferentes</p>
       <div className='row row-cols-1 row-cols-lg-3 g-5'>

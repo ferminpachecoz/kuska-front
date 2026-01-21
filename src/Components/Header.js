@@ -18,7 +18,7 @@ export default function Header() {
       >
         <a href="/#como-funciona">Cómo funciona</a>
         <a href="/#caracteristicas">Características</a>
-        <a href="/#testimonios">Testimonios</a>
+        <a href="/#nuestros-valores">Nuestros Valores</a>
         <a href="/contacto" className='btn-download'>Pre inscripción</a>
       </div>
     </div>

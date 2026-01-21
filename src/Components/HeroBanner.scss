@@ -12,6 +12,7 @@
     $verde 100%
   );
   overflow: hidden;
+  padding-top: 80px;
   img{
     width: 70%;
   }
@@ -50,7 +51,7 @@
   .hero-banner{
     flex-direction: column;
     justify-content: center;
-    padding: 0em 2em 2em 2em;
+    padding: 80px 2em 2em 2em;
     h1{
       text-align: center;
       font-size: 3.5em;
