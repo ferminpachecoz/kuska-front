@@ -23,7 +23,7 @@ const TermsAndConditions = () => {
             </span>
             <span className="tc__dot" aria-hidden="true">•</span>
             <span className="tc__metaItem">
-              <strong>Titular del servicio:</strong> 4 MINDS S.A. (sociedad en formación) — CUIT [●]
+              <strong>Titular del servicio:</strong> 4 MINDS S.A. — CUIT [●]
             </span>
             <span className="tc__dot" aria-hidden="true">•</span>
             <span className="tc__metaItem">
