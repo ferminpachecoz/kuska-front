@@ -7,7 +7,6 @@ import Valores from '../Components/Valores'
 import Caracteristicas from '../Components/Caracteristicas'
 import SecondaryBanner from '../Components/SecondaryBanner'
 import HowTo from '../Components/HowTo'
-import Testimonials from '../Components/Testimonials'
 import Tecnologia from '../Components/Tecnologia'
 import Footer from '../Components/Footer'
 
