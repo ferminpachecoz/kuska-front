@@ -3,7 +3,7 @@ import './HeroBanner.scss';
 
 const HeroBanner = () => {
   return (
-    <section className="hero-banner">
+    <section className="hero-banner" id='top'>
       <div className='col-lg-7 col-12'>
         <h1>Un puente que une corazones</h1>
         <h2>Conectá con personas que comparten tu cultura, tus raíces y tu forma de amar.</h2>

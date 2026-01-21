@@ -14,15 +14,17 @@ export default function Footer() {
           <div>
             <a href="/politica-de-privacidad">Privacidad</a>
             <a href="/terminos-y-condiciones">Términos y Condiciones</a>
-            <a href="/contacto">Contacto</a>
-            <a href="/">Home</a>
+            <a href="/contacto">Pre inscripción</a>
+            <a href="/">Página Principal</a>
           </div>
         </div>
         <div className='col-lg-4 col-12 mb-lg-0 mb-4 right'>
           <p className='col-title'>Seguinos</p>
           <div className='social-media'>
             <span>
-              <img src="/iconos/instagram.png" alt="Logo Instagram" />
+              <a href="https://www.instagram.com/kuskaoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <img src="/iconos/instagram.png" alt="Logo Instagram" />
+              </a>
             </span>
             <span>
               <img src="/iconos/facebook.png" alt="Logo Facebook" />

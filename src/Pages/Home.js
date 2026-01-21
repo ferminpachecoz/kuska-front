@@ -13,6 +13,11 @@ import Footer from '../Components/Footer'
 export default function Home() {
   return (
     <>
+      <span className='roll-top'>
+        <a href="/#top">
+          <img src="/iconos/flecha.png" alt="Icono de flecha" />
+        </a>
+      </span>
       <Header />
       <HeroBanner />
       <Phrase />

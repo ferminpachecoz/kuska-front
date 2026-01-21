@@ -6,7 +6,26 @@ body {
   font-weight: $weight-regular;
   -webkit-font-smoothing: antialiased;
   color: $color-text-dark;
+  position: relative;
 }
+
+.roll-top{
+  position: fixed;
+  z-index: 100000;
+  bottom: 3%;
+  right: 1%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1000000px;
+  background-image: linear-gradient(to right, $rojo, $lila);
+  img{
+    width: 40px;
+  }
+}
+
 
 // Jerarquía Tipográfica (Según Pág. 24 del Manual)
 p{
@@ -70,5 +89,9 @@ p{
 @media (max-width: 475px){
   .section-title{
     font-size: 35px;
+  }
+  .roll-top{
+    right: 6%;
+    bottom: 4%;
   }
 }
