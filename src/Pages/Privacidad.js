@@ -1,14 +1,13 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Footer from '../Components/Footer'
-import ContactPage from '../Components/ContactPage'
-import ContactPageAlt from '../Components/ContactPageAlt'
+import PrivacyPolicy from '../Components/PrivacyPolicy'
 
-export default function Contact() {
+export default function Privacidad() {
   return (
     <>
       <Header />
-      <ContactPageAlt />
+      <PrivacyPolicy />
       <Footer />
     </>
   )

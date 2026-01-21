@@ -26,8 +26,7 @@ const ThankYouPage = () => {
           <h1 className="thankyou-title">¡Gracias por inscribirte!</h1>
           
           <p className="thankyou-message">
-            Hemos recibido tu información correctamente. 
-            Nuestro equipo se pondrá en contacto contigo muy pronto.
+            Tu registro fue exitoso y ya aseguraste 100% de descuento en tu primer mes del plan Premium. Queremos que vivas la experiencia completa desde el primer día.
           </p>
 
           <p className="thankyou-submessage">

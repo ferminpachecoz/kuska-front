@@ -4,15 +4,25 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './ContactPage.scss';
 
-const ContactPage = () => {
+// Phone input (bandera + código)
+import PhoneInput, { isValidPhoneNumber } from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
+
+const ContactPageAlt = () => {
   const navigate = useNavigate();
+
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
     email: '',
-    telefono: '',
-    pais: ''
+    telefono: '', // lo vamos a guardar en formato E.164 (ej: +5491123456789)
+    pais: ''      // país de residencia (bolivia / argentina)
   });
+
+  // País por defecto del selector de prefijo (ISO-2)
+  // Nota: esto NO es el país de residencia, solo el prefijo del teléfono
+  const [phoneCountry, setPhoneCountry] = useState('BO');
+
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -33,9 +43,9 @@ const ContactPage = () => {
       newErrors.email = 'Ingresa un email válido';
     }
 
-    if (!formData.telefono.trim()) {
+    if (!formData.telefono) {
       newErrors.telefono = 'El teléfono es requerido';
-    } else if (!/^[0-9+\-\s()]{8,}$/.test(formData.telefono)) {
+    } else if (!isValidPhoneNumber(formData.telefono)) {
       newErrors.telefono = 'Ingresa un teléfono válido';
     }
 
@@ -47,20 +57,30 @@ const ContactPage = () => {
     return Object.keys(newErrors).length === 0;
   };
 
+  const clearFieldError = (field) => {
+    if (errors[field]) {
+      setErrors(prev => ({ ...prev, [field]: '' }));
+    }
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+
     setFormData(prev => ({
       ...prev,
       [name]: value
     }));
-    
-    // Clear error when user starts typing
-    if (errors[name]) {
-      setErrors(prev => ({
-        ...prev,
-        [name]: ''
-      }));
-    }
+
+    clearFieldError(name);
+  };
+
+  const handlePhoneChange = (value) => {
+    // value viene en E.164 (ej: +59170000000) o undefined si está vacío
+    setFormData(prev => ({
+      ...prev,
+      telefono: value || ''
+    }));
+    clearFieldError('telefono');
   };
 
   const handleSubmit = async (e) => {
@@ -69,23 +89,21 @@ const ContactPage = () => {
     if (!validateForm()) return;
 
     setIsSubmitting(true);
-
+    
     try {
       const res = await fetch(`https://kuska-api-production.up.railway.app/api/contacts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(formData), // telefono ya va con +código
       });
 
       const data = await res.json();
 
       if (!res.ok) {
-        // Si la API devuelve error, lo mostramos (o log)
         console.error('API error:', data);
         return;
       }
 
-      // Si todo OK, redirigimos
       navigate('/gracias');
     } catch (error) {
       console.error('Error al enviar el formulario:', error);
@@ -99,9 +117,9 @@ const ContactPage = () => {
       <main className="contact-main">
         <div className="contact-container">
           <div className="contact-header">
-            <h1 className="contact-title">Contáctanos</h1>
+            <h1 className="contact-title">Pre inscripción</h1>
             <p className="contact-subtitle">
-              Queremos conocerte. Déjanos tus datos y nos pondremos en contacto contigo pronto.
+              Preinscribite y disfrutá un mes gratis del plan Premium al lanzar la app.
             </p>
           </div>
 
@@ -153,25 +171,29 @@ const ContactPage = () => {
             <div className="form-row">
               <div className="form-group">
                 <label htmlFor="telefono">Teléfono</label>
-                <label
-                  style={{fontWeight: 600, fontSize: "12px"}}
-                >
-                  *No incluir el codigo del país
-                </label>
-                <input
-                  type="tel"
+
+                {/* PhoneInput con bandera + código */}
+                <PhoneInput
                   id="telefono"
-                  name="telefono"
-                  value={formData.telefono}
-                  onChange={handleChange}
-                  placeholder="11-1111-1111"
-                  className={errors.telefono ? 'error' : ''}
+                  international
+                  defaultCountry={phoneCountry}
+                  // Para que el usuario no tenga que escribir "+", la UI lo maneja
+                  value={formData.telefono || undefined}
+                  onChange={handlePhoneChange}
+                  onCountryChange={(country) => {
+                    // country viene como ISO-2 (ej: 'AR', 'BO')
+                    if (country) setPhoneCountry(country);
+                  }}
+                  // podés habilitar búsqueda si querés:
+                  // smartCaret
+                  className={errors.telefono ? 'phone-input error' : 'phone-input'}
                 />
+
                 {errors.telefono && <span className="error-message">{errors.telefono}</span>}
               </div>
 
               <div className="form-group">
-                <label htmlFor="pais">País</label>
+                <label htmlFor="pais">País (residencia)</label>
                 <select
                   id="pais"
                   name="pais"
@@ -182,13 +204,15 @@ const ContactPage = () => {
                   <option value="">Selecciona tu país</option>
                   <option value="bolivia">Bolivia</option>
                   <option value="argentina">Argentina</option>
+                  <option value="españa">España</option>
+                  <option value="chile">Chile</option>
                 </select>
                 {errors.pais && <span className="error-message">{errors.pais}</span>}
               </div>
             </div>
 
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="submit-btn"
               disabled={isSubmitting}
             >
@@ -207,4 +231,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactPageAlt;

@@ -129,7 +129,7 @@ $font-body: 'General Sans', sans-serif;
   border: none;
   border-radius: 50px;
   background: linear-gradient(135deg, $lila 0%, darken($lila, 15%) 100%);
-  color: white;
+  color: white !important;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
